@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="x-ua-compatible" content="ie=7">
+      <!--render Internet Explorer v7 standards mode regardless of doctype-->
+      <meta http-equiv="x-ua-compatible" content="ie=emulateie7">
+      <!--render according to doctype, standards is v7 and quirks is v5-->
+      <meta http-equiv="x-ua-compatible" content="ie=8">
+      <!--render Internet Explorer v8 standards mode regardless of doctype-->
+      <meta http-equiv="x-ua-compatible" content="ie=emulateie8">
+      <!--render according to doctype, standards is v8 and quirks is v5-->
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <!--render using latest version of Internet Explorer-->
+      <meta http-equiv="x-ua-compatible" content="ie=5">
+      <!--render using Internet Explorer v7 quirks mode, which is like v5-->
+      <meta http-equiv="x-ua-compatible" content="ie=5; ie=8">
+      <!--render using v8 if available, otherwise use v5 instead of v6 or v7-->
+      <meta http-equiv="x-ua-compatible" content="chrome=1">
+      <!--render using Chrome if available-->
+      <meta http-equiv="x-ua-compatible" content="ie=emulateie7; chrome=1">
+      <!--render Chrome if available or Internet Explorer v7-->
+      <meta name="google-site-verification" content="0XYpGK5xpKSmNzMzrvi33Sb9QMF3Yn48p1UPnIRQwAw">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="author" content="">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <title>Cart</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/css/new.css">
+   </head>
+   <body>
+      <header class="main_header_bg" >
+         <div class="navbar-container" id="navbar" >
+            <div class="navbar navbar-expand-lg">
+               <a class="navbar-brand" href="/">
+                  <div class="main_header__logo">
+                     <img src="./assets/images/logo_1.png">
+                  </div>
+               </a>
+               <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" id="toggle-menu">
+               </button>
+               <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav mx-auto">
+                     <li class="nav-item ">
+                        <a class="" href="#">CMYK Proofs</a>
+                     </li>
+                     <li class="nav-item ">
+                        <a class="" href="#">HDR C-Prints</a>
+                     </li>
+                     <li class="nav-item ">
+                        <a class="" href="#">Acrylic C-Prints</a>
+                     </li>
+                     <li class="nav-item ">
+                        <a class="" href="#">Giclee Prints</a>
+                     </li>
+                     <li class="nav-item ">
+                        <a class="" href="#">Gallery Canvas</a>
+                     </li>
+                  </ul>
+                  <div class="form-inline header__info">
+                     <div class="login">
+                        <a class="log" href="#">My Orders</a>
+                     </div>
+                     <div class="login">
+                        <a class="log" href="#">Admin</a>
+                     </div>
+                     <div class="login">
+                        <a class="log" href="users/sign_out">Log out</a>
+                        <a class="user" href="#"><img src="./assets/images/user-icon.png"></a>
+                     </div>
+                     <div class="cart-panel">
+                        <a href="cart"><img src="./assets/images/cart.png"></a>
+                        <h2>Cart <span>2</span></h2>
+                     </div>
+                     <div class="iconLink iconLink_clock"></div>
+                     <div class="iconLink iconLink_phone"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="num" style="background-image: url('');">
+               <h2 class="text-center">9179924810</h2>
+            </div>
+            <div class="num-mobile">
+               <h2 class="text-left">9179924810</h2>
+            </div>
+         </div>
+      </header>
+      <main>
+         <section class="upload-wrapper">
+            <div class="container-custom">
+               <div class="header-section text-center">
+                  <h1>MY UPLOAD CART</h1>
+                  <p>Upload your files select proof options </p>
+               </div>
+               <div class="scrollable-div">
+                  <div class="custom-table">
+                     <div class="table-header row align-items-center element main-table-header" style="background-color: #E2007B;" id ='element-1'>
+                        <div class="col-lg-4">
+                           <div class="header-filter row">
+                              <div class="col-5">
+                                 <h2>PRODUCT</h2>
+                              </div>
+                              <div class="col-7">
+                                 <div class="dropdown-wrapper tooltip-wrapper" style="border: 1px solid #fff;">
+                                    <span class="tooltiptext">Placeholder text</span>
+                                    <select class="product_dropdown" style="border: 1px solid #e2007b; color: #e2007b;" id="element-select">
+                                       <option selected="selected" value="cmyk-proofs">CMYK Proofs</option>
+                                       <option value="hdr-c-prints">HDR C-Prints</option>
+                                       <option value="acrylic-c-prints">Acrylic C-Prints</option>
+                                       <option value="giclee-prints">Giclee Prints</option>
+                                       <option value="gallery-canvas">Gallery Canvas</option>
+                                    </select>
+                                    <div class="icon-div" style="background-color: #e2007b;">
+                                       <i class="fa fa-chevron-down"></i>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 mobile-remove">
+                           <h2>SIZE OPTIONS</h2>
+                        </div>
+                        <div class="col-lg-3 mobile-remove">
+                           <h2>Border Options</h2>
+                        </div>
+                        <div class="col-lg-2 mobile-remove">
+                           <h2 class="text-center">
+                              <div class="price-title-wrapper">PRICE</div>
+                           </h2>
+                        </div>
+                     </div>
+                     <div class="data-container">
+                        <div class="table-body row">
+                           <div class="col-lg-4">
+                              <div class="row">
+                                 <div class="col-lg-5">
+                                    <div class="image-wrapper">
+                                       <div class="top-box"></div>
+                                       <img src="assets/images/example-image.png" alt="" class="preview-image">
+                                       <div class="bottom-box"></div>
+                                    </div>
+                                   
+                                 </div>
+                                 <div class="col-lg-7">
+                                    <div class="selection-container">
+                                       <div class="dropdown-wrapper tooltip-wrapper">
+                                          <span class="tooltiptext">Placeholder text</span>
+                                          <select class="product_dropdown" style="border: 1px solid #e2007b; color: #e2007b;" >
+                                             <option selected="selected" value="cmyk-proofs">Paper</option>
+                                             <option value="hdr-c-prints" >Placeholder text</option>
+                                             <option value="acrylic-c-prints">Placeholder text</option>
+                                             <option value="giclee-prints">Placeholder text</option>
+                                             <option value="gallery-canvas">Placeholder text</option>
+                                          </select>
+                                          <div class="icon-div" style="background-color: #e2007b;">
+                                             <i class="fa fa-chevron-down"></i>
+                                          </div>
+                                       </div>
+                                       <div class="dropdown-wrapper tooltip-wrapper">
+                                            <span class="tooltiptext">Placeholder text</span>
+                                            <select class="product_dropdown" style="border: 1px solid #9e9e9e; color: #9e9e9e;" >
+                                            <option selected="selected" value="cmyk-proofs">Up to size</option>
+                                            <option value="hdr-c-prints" >Placeholder text</option>
+                                            <option value="acrylic-c-prints">Placeholder text</option>
+                                            <option value="giclee-prints">Placeholder text</option>
+                                            <option value="gallery-canvas">Placeholder text</option>
+                                            </select>
+                                            <div class="icon-div" style="background-color: #9e9e9e;">
+                                            <i class="fa fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                       <h2 class="product-name-tag">download (1).jpeg</h2>
+                                       </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3">
+                              <!-- mobile header -->
+                              <div class="table-header row align-items-center element table-mobile-header" style="background-color: #E2007B;" id ='element-1'>
+                                 <div class="col-12">
+                                    <h2>SIZE OPTIONS</h2>
+                                 </div>
+                              </div>
+                              <!-- end of mobile header -->
+                              <div class="size-options">
+                                 <div class="option-row">
+                                    <div class="option-wrapper tooltip-wrapper">
+                                       <span class="tooltiptext">Placeholder text</span>
+                                       <input type="radio" name="art_size" id ="size_1">
+                                       <label for="size_1"><span></span></label>
+                                       <div class="option-name">
+                                          Artwork Size:  3.6 x 2.7 - DPI: 300
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="option-row tooltip-wrapper">
+                                    <span class="tooltiptext">Placeholder text</span>
+                                    <div class="option-wrapper">
+                                       <input type="radio" name="art_size" id ="size_2">
+                                       <label for="size_2"><span></span></label>
+                                       <div class="option-name" style="white-space: nowrap;">
+                                          Standard Sizes: 
+                                       </div>
+                                       <div class="dropdown-wrapper">
+                                          <select class="product_dropdown" style="border: 1px solid #9E9E9E; color: #9E9E9E;" >
+                                             <option selected="selected">8x13</option>
+                                             <option>Placeholder text</option>
+                                             <option>Placeholder text</option>
+                                             <option>Placeholder text</option>
+                                             <option>Placeholder text</option>
+                                          </select>
+                                          <div class="icon-div" style="background-color: #9E9E9E;">
+                                             <i class="fa fa-chevron-down"></i>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="option-row tooltip-wrapper">
+                                    <span class="tooltiptext">Placeholder text</span>
+                                    <div class="option-wrapper">
+                                       <input type="radio" name="art_size" id ="size_3">
+                                       <label for="size_3"><span></span></label>
+                                       <div class="option-name" style="white-space: nowrap;">
+                                          Custom Width:
+                                       </div>
+                                       <div class="width-container">
+                                          <input type="text" name="custom_width" id="custom_width_7446" value="" placeholder="Width" readonly="readonly" autocomplete="off" class="custom_fields custom_width form-control-sm number-field">
+                                          <input type="text" name="custom_height" id="custom_height_7446" value="" placeholder="Height" readonly="readonly" autocomplete="off" class="custom_fields custom_height form-control-sm number-field">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3">
+                              <!-- mobile header -->
+                              <div class="table-header row align-items-center element table-mobile-header" style="background-color: #E2007B;" id ='element-1'>
+                                 <div class="col-12">
+                                    <h2>Border Options</h2>
+                                 </div>
+                              </div>
+                              <!-- end of mobile header -->
+                              <div class="border-options">
+                                 <div class="option-row tooltip-wrapper">
+                                    <span class="tooltiptext">Placeholder text</span>
+                                    <div class="option-wrapper">
+                                       <input type="radio" name="border_option" id ="border_1">
+                                       <label for="border_1"><span></span></label>
+                                       <div class="option-name">
+                                          0.24" boarder outside print scale: 4.1x3.2
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="option-row tooltip-wrapper">
+                                    <span class="tooltiptext">Placeholder text</span>
+                                    <div class="option-wrapper">
+                                       <input type="radio" name="border_option" id ="border_2">
+                                       <label for="border_2"><span></span></label>
+                                       <div class="option-name">
+                                          Full Bleed (Crop to fit)
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="button-row border-button">
+                                 <button class="btn customize-btn">Placeholder text</button>
+                              </div>
+                           </div>
+                           <div class="col-lg-2">
+                              <!-- mobile header -->
+                              <div class="table-header row align-items-center element table-mobile-header" style="background-color: #E2007B;" id ='element-1'>
+                                 <div class="col-12">
+                                    <h2 class="text-center">
+                                       <div class="price-title-wrapper">PRICE</div>
+                                    </h2>
+                                 </div>
+                              </div>
+                              <!-- end of mobile header -->
+                              <div class="mobile-price-container">
+                                 <div class="price-wrapper price-counter">
+                                    <div class="quantity d-block tooltip-wrapper rel">
+                                       <span class="tooltiptext">Add or Remove Quantity</span>
+                                       <div class="d-flex align-items-center justify-content-center item-width height-wrapper">
+                                          <span class="quantity-remove quantity-button">
+                                          <a class="number__minus">-</a>
+                                          </span>
+                                          <input value="1" min="1" step="1" class="number__field" id="7446_quantity__line_item" readonly="readonly" type="number" >
+                                          <span class="quantity-add quantity-button">
+                                          <a class="number__plus">+</a>
+                                          </span>
+                                       </div>
+                                       <div class="price-per-page">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="price-main-container">
+                                    <div class="price-container">
+                                       <div class="class-inner">
+                                          <div class="value-price text-center">
+                                             <h2 class="discounted-price">
+                                                $21.99
+                                             </h2>
+                                          </div>
+                                          <div class="value-price text-center">
+                                             <h2 class="original-price">
+                                                $21.99
+                                             </h2>
+                                          </div>
+                                       </div>
+                                       <a class="close order__delete-link" style="--cart-product-color-var: #e2007b;" id="order_delete_link_7446"  href="#"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <!-- <div class="price-container">
+                                       </div> -->
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="table-body row">
+                           <div class="col-lg-4">
+                              <div class="row">
+                                 <div class="col-lg-5">
+                                    <div class="image-wrapper">
+                                       <div class="top-box"></div>
+                                       <img src="assets/images/example-image.png" alt="" class="preview-image">
+                                       <div class="bottom-box"></div>
+                                    </div>
+                                    
+                                 </div>
+                                 <div class="col-lg-7">
+                                    <div class="selection-container">
+                                       <div class="dropdown-wrapper tooltip-wrapper">
+                                          <span class="tooltiptext">Placeholder text</span>
+                                          <select class="product_dropdown" style="border: 1px solid #e2007b; color: #e2007b;" >
+                                             <option selected="selected" value="cmyk-proofs">Paper</option>
+                                             <option value="hdr-c-prints" >Placeholder text</option>
+                                             <option value="acrylic-c-prints">Placeholder text</option>
+                                             <option value="giclee-prints">Placeholder text</option>
+                                             <option value="gallery-canvas">Placeholder text</option>
+                                          </select>
+                                          <div class="icon-div" style="background-color: #e2007b;">
+                                             <i class="fa fa-chevron-down"></i>
+                                          </div>
+                                       </div>
+                                       <div class="dropdown-wrapper tooltip-wrapper">
+                                            <span class="tooltiptext">Placeholder text</span>
+                                            <select class="product_dropdown" style="border: 1px solid #9e9e9e; color: #9e9e9e;" >
+                                            <option selected="selected" value="cmyk-proofs">Up to size</option>
+                                            <option value="hdr-c-prints" >Placeholder text</option>
+                                            <option value="acrylic-c-prints">Placeholder text</option>
+                                            <option value="giclee-prints">Placeholder text</option>
+                                            <option value="gallery-canvas">Placeholder text</option>
+                                            </select>
+                                            <div class="icon-div" style="background-color: #9e9e9e;">
+                                            <i class="fa fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                       <h2 class="product-name-tag">download (1).jpeg</h2>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3">
+                              <!-- mobile header -->
+                              <div class="table-header row align-items-center element table-mobile-header" style="background-color: #E2007B;" id ='element-1'>
+                                 <div class="col-12">
+                                    <h2>SIZE OPTIONS</h2>
+                                 </div>
+                              </div>
+                              <!-- end of mobile header -->
+                              <div class="size-options">
+                                 <div class="option-row">
+                                    <div class="option-wrapper tooltip-wrapper">
+                                       <span class="tooltiptext">Placeholder text</span>
+                                       <input type="radio" name="art_size_1" id ="size_1_1">
+                                       <label for="size_1_1"><span></span></label>
+                                       <div class="option-name">
+                                          Artwork Size:  3.6 x 2.7 - DPI: 300
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="option-row tooltip-wrapper">
+                                    <span class="tooltiptext">Placeholder text</span>
+                                    <div class="option-wrapper">
+                                       <input type="radio" name="art_size_1" id ="size_2_1">
+                                       <label for="size_2_1"><span></span></label>
+                                       <div class="option-name" style="white-space: nowrap;">
+                                          Standard Sizes: 
+                                       </div>
+                                       <div class="dropdown-wrapper">
+                                          <select class="product_dropdown" style="border: 1px solid #9E9E9E; color: #9E9E9E;" >
+                                             <option selected="selected">8x13</option>
+                                             <option>Placeholder text</option>
+                                             <option>Placeholder text</option>
+                                             <option>Placeholder text</option>
+                                             <option>Placeholder text</option>
+                                          </select>
+                                          <div class="icon-div" style="background-color: #9E9E9E;">
+                                             <i class="fa fa-chevron-down"></i>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="option-row tooltip-wrapper">
+                                    <span class="tooltiptext">Placeholder text</span>
+                                    <div class="option-wrapper">
+                                       <input type="radio" name="art_size_1" id ="size_3_1">
+                                       <label for="size_3_1"><span></span></label>
+                                       <div class="option-name" style="white-space: nowrap;">
+                                          Custom Width:
+                                       </div>
+                                       <div class="width-container">
+                                          <input type="text" name="custom_width" id="custom_width_7446" value="" placeholder="Width" readonly="readonly" autocomplete="off" class="custom_fields custom_width form-control-sm number-field">
+                                          <input type="text" name="custom_height" id="custom_height_7446" value="" placeholder="Height" readonly="readonly" autocomplete="off" class="custom_fields custom_height form-control-sm number-field">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3">
+                              <!-- mobile header -->
+                              <div class="table-header row align-items-center element table-mobile-header" style="background-color: #E2007B;" id ='element-1'>
+                                 <div class="col-12">
+                                    <h2>Border Options</h2>
+                                 </div>
+                              </div>
+                              <!-- end of mobile header -->
+                              <div class="border-options">
+                                 <div class="option-row tooltip-wrapper">
+                                    <span class="tooltiptext">Placeholder text</span>
+                                    <div class="option-wrapper">
+                                       <input type="radio" name="border_option_1" id ="border_1_1">
+                                       <label for="border_1_1"><span></span></label>
+                                       <div class="option-name">
+                                          0.24" boarder outside print scale: 4.1x3.2
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="option-row tooltip-wrapper">
+                                    <span class="tooltiptext">Placeholder text</span>
+                                    <div class="option-wrapper">
+                                       <input type="radio" name="border_option_1" id ="border_2_1">
+                                       <label for="border_2_1"><span></span></label>
+                                       <div class="option-name">
+                                          Full Bleed (Crop to fit)
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="button-row border-button">
+                                 <button class="btn customize-btn">Placeholder text</button>
+                              </div>
+                           </div>
+                           <div class="col-lg-2">
+                              <!-- mobile header -->
+                              <div class="table-header row align-items-center element table-mobile-header" style="background-color: #E2007B;" id ='element-1'>
+                                 <div class="col-12">
+                                    <h2 class="text-center">
+                                       <div class="price-title-wrapper">PRICE</div>
+                                    </h2>
+                                 </div>
+                              </div>
+                              <!-- end of mobile header -->
+                              <div class="mobile-price-container">
+                                 <div class="price-wrapper price-counter">
+                                    <div class="quantity d-block tooltip-wrapper rel">
+                                       <span class="tooltiptext">Add or Remove Quantity</span>
+                                       <div class="d-flex align-items-center justify-content-center item-width height-wrapper">
+                                          <span class="quantity-remove quantity-button">
+                                          <a class="number__minus" href="javascript: void(0);">-</a>
+                                          </span>
+                                          <input value="1" min="1" step="1" class="number__field" id="7446_quantity__line_item" readonly="readonly" type="number">
+                                          <span class="quantity-add quantity-button">
+                                          <a class="number__plus" href="javascript: void(0);">+</a>
+                                          </span>
+                                       </div>
+                                       <div class="price-per-page">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="price-main-container">
+                                    <div class="price-container">
+                                       <div class="class-inner">
+                                          <div class="value-price text-center">
+                                             <h2 class="discounted-price">
+                                                $21.99
+                                             </h2>
+                                          </div>
+                                          <div class="value-price text-center">
+                                             <h2 class="original-price">
+                                                $21.99
+                                             </h2>
+                                          </div>
+                                       </div>
+                                       <a class="close order__delete-link" style="--cart-product-color-var: #e2007b;" id="order_delete_link_7446"  href="#"><i class="fa fa-times"></i></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="option-upgrade">
+                        <div class="row">
+                           <div class="col-lg-4 tooltip-wrapper">
+                              <span class="tooltiptext">Placeholder text</span>
+                              <div class="row-checkbox">
+                                 <input type="checkbox" name ="add_option_1_1" id ="a_1_1">
+                                 <label for="a_1_1">Add optically clear acetate to front of the proof (plus 20%)</label>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 tooltip-wrapper">
+                              <span class="tooltiptext">Placeholder text</span>
+                              <div class="row-checkbox">
+                                 <input type="checkbox" name ="add_option_1_1" id ="a_2_1">
+                                 <label for="a_2_1">Add optically clear acetate to front of the proof (plus 20%)</label>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 tooltip-wrapper">
+                              <span class="tooltiptext">Placeholder text</span>
+                              <div class="row-checkbox">
+                                 <input type="checkbox" name ="add_option_1_1" id ="a_3_1">
+                                 <label for="a_3_1">Add optically clear acetate to front of the proof (plus 20%)</label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!-- new footer  -->
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4">
+                  <img src="assets/images/logo.png" alt="" class="footer-logo">
+               </div>
+               <div class="col-lg-2">
+                  <div class="menu-links">
+                     <h2>PRODUCTS</h2>
+                     <ul>
+                        <li><a href="#">CMYK Proofs</a></li>
+                        <li><a href="#">HDR C-Prints</a></li>
+                        <li><a href="#">Acrylic C-Prints</a></li>
+                        <li><a href="#">Giclee Prints</a></li>
+                        <li><a href="#">Gallery Canvas</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2">
+                  <div class="menu-links">
+                     <h2>INFORMATION</h2>
+                     <ul>
+                        <li><a href="#">About Light Print
+                           </a>
+                        </li>
+                        <li><a href="#">HDR C-Prints</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Frequently Asked Questions</a></li>
+                        <li><a href="#">Contact Form</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2">
+                  <div class="menu-links">
+                     <h2>LEGAL</h2>
+                     <ul>
+                        <li><a href="#">Terms and conditions
+                           </a>
+                        </li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2">
+                  <div class="menu-links">
+                     <h2>CONTACT</h2>
+                     <p>306 West 37th Street
+                        Store Front
+                        New York, NY 10018
+                        kevin@lightprint.com
+                        +1 917-992-4810
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+      <script src="assets/js/new.js"></script>
+      
+   </body>
+</html>

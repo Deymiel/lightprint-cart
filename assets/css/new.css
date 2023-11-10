@@ -7960,4 +7960,68 @@ body * {
 
 .quantity-button {
   cursor: pointer;
+}
+
+.product-name-tag {
+  font-size: 16px;
+  color: #57abe0;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+  .mobile-remove {
+    display: none;
+  }
+  .custom-table {
+    width: 100%;
+  }
+  .custom-table .table-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .data-container .table-body {
+    border: 3px solid #e2007b;
+    margin: 0;
+  }
+  .data-container .table-body:not(:last-child) {
+    border-bottom: none !important;
+  }
+  .num-mobile {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+  .custom-table .table-header {
+    margin-top: 20px;
+  }
+  .selection-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .selection-container .dropdown-wrapper {
+    order: 2;
+  }
+  .selection-container .text-field {
+    order: 3;
+  }
+  .product-name-tag {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .custom-table .main-table-header {
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #e2007b;
+  }
+  .custom-table .main-table-header {
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }/*# sourceMappingURL=new.css.map */
